@@ -29,7 +29,7 @@
 							<div class="col-sm-5">
 								<select name="user.country" class="form-control ${!empty exception.causes['user.country'] ? 'is-invalid' : ''}">
 									<option value="">--- Select ---</option>
-				                   	<c:forEach var="country" items="${countryList}">
+				                   	<c:forEach var="country" items="${Controller.countryList}">
 										<option value="${country.key}" ${user.country == country.key? 'selected' : ''}>${country.value}</option>
 								  	</c:forEach>
 								</select>
@@ -44,7 +44,7 @@
 							<label class="col-sm-2 control-label">Java Skills</label>
 							<div class="col-sm-5">
 								<select name="user.skill" multiple size="5" class="form-control ${!empty exception.causes['user.skill'] ? 'is-invalid' : ''}">
-				                   <c:forEach var="skill" items="${javaSkillList}">
+				                   <c:forEach var="skill" items="${Controller.javaSkillList}">
 									<option value="${skill.key}" ${user.skill.contains(skill.key)? 'selected' : ''}>${skill.value}</option>
 								  </c:forEach>
 								</select>
