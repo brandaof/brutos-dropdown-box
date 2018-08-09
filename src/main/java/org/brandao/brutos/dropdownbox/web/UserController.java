@@ -11,7 +11,6 @@ import org.brandao.brutos.annotation.Actions;
 import org.brandao.brutos.annotation.Basic;
 import org.brandao.brutos.annotation.View;
 import org.brandao.brutos.annotation.web.RequestMethod;
-import org.brandao.brutos.annotation.web.ResponseErrors;
 import org.brandao.brutos.dropdownbox.entity.User;
 import org.brandao.brutos.web.RequestMethodTypes;
 import org.brandao.brutos.web.WebFlowController;
@@ -20,7 +19,6 @@ import org.brandao.brutos.web.WebFlowController;
 	@Action(value="/", view=@View("user/form")),
 	@Action(value="/success", view=@View("user/show"))
 })
-@ResponseErrors(rendered=false)
 public class UserController {
 
 	@Action("/")
