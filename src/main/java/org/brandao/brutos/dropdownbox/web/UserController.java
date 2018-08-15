@@ -11,8 +11,8 @@ import org.brandao.brutos.annotation.Actions;
 import org.brandao.brutos.annotation.Basic;
 import org.brandao.brutos.annotation.View;
 import org.brandao.brutos.annotation.web.RequestMethod;
+import org.brandao.brutos.annotation.web.RequestMethodTypes;
 import org.brandao.brutos.dropdownbox.entity.User;
-import org.brandao.brutos.web.RequestMethodTypes;
 import org.brandao.brutos.web.WebFlowController;
 
 @Actions({
